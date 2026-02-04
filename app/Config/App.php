@@ -41,8 +41,8 @@ class App extends BaseConfig
      * from your site URIs, set this variable to an empty string.
      */
 
-    // public string $indexPage = 'index.php';
-    public string $indexPage = '';
+    public string $indexPage = 'index.php';
+    // public string $indexPage = '';
 
     /**
      * --------------------------------------------------------------------------
@@ -202,6 +202,6 @@ class App extends BaseConfig
      * @see http://www.w3.org/TR/CSP/
      */
 
-    // public bool $CSPEnabled = false;
-    public bool $CSPEnabled = true;
+    public bool $CSPEnabled = false;
+    // public bool $CSPEnabled = true;
 }

@@ -16,11 +16,11 @@ Options -Indexes
 	# http://httpd.apache.org/docs/current/mod/mod_rewrite.html#rewritebase
 	# RewriteBase /
 
-	RewriteEngine On
-    RewriteCond %{HTTPS} !=on
-    RewriteCond %{THE_REQUEST} /public/([^\s?]*) [NC]
-    RewriteRule ^ %1 [L,NE,R=302]
-    RewriteRule ^((?!public/).*)$ public/$1 [L,NC]
+	# RewriteEngine On
+    # RewriteCond %{HTTPS} !=on
+    # RewriteCond %{THE_REQUEST} /public/([^\s?]*) [NC]
+    # RewriteRule ^ %1 [L,NE,R=302]
+    # RewriteRule ^((?!public/).*)$ public/$1 [L,NC]
 
 	# Redirect Trailing Slashes...
 	RewriteCond %{REQUEST_FILENAME} !-d
